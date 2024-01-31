@@ -480,3 +480,108 @@ main {
         5px -5px 5px rgba(0, 0, 0, 0.2),
         -5px 5px 5px rgba(0, 0, 0, 0.2)*/;
 }
+
+@media screen and (max-width: 767px) {
+    /* Styles for screens smaller than 768 pixels wide (e.g., mobile devices) */
+
+    body {
+        font-size: 16px; /* Adjust the font size for better readability on smaller screens */
+    }
+
+    .header {
+        height: auto;
+        padding: 10px;
+    }
+
+    .logo-link {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        margin-bottom: 10px;
+    }
+
+    .logo-link img {
+        width: 40px; /* Adjust the size of your logos for smaller screens */
+        height: auto;
+    }
+
+    .header-text {
+        font-size: 16px; /* Adjust the font size for better readability on smaller screens */
+        margin-right: 10px;
+    }
+
+    .contact-me {
+        font-size: 18px; /* Adjust the font size for better readability on smaller screens */
+    }
+
+    .header-text.contact-me {
+        font-size: 16px !important; /* Adjust the font size for better readability on smaller screens */
+    }
+
+    .btn.btn-outline-dark {
+        font-size: 14px !important; /* Adjust the font size for better readability on smaller screens */
+    }
+
+    .name-card {
+        margin-top: 100px !important; /* Adjust the value as needed for smaller screens */
+    }
+
+    .scroll-container {
+        max-height: none;
+    }
+
+    .name-card {
+        margin: 20px;
+    }
+
+    .resume-card,
+    .new-card,
+    .project-card {
+        margin: 20px;
+        padding: 20px;
+    }
+
+    .resume-card,
+    .new-card,
+    .project-card,
+    .footer {
+        border-radius: 15px; /* Remove border-radius on smaller screens */
+    }
+
+    .video-container {
+        border-radius: 0;
+    }
+
+    .card-title-name {
+        font-size: 40px;
+    }
+
+    .resume-btn {
+        font-size: 30px !important;
+        padding: 0.375rem 0.75rem;
+    }
+
+    .card-title {
+        font-size: 40px;
+    }
+
+    .card-sub-title {
+        font-size: 24px;
+    }
+
+    #skills img {
+        width: 100px !important;
+        height: auto !important;
+    }
+
+    #aboutMeSection p {
+        padding-left: 10px;  /* Adjust as needed */
+        padding-right: 10px; /* Adjust as needed */
+    }
+    
+    /* Adjust padding for text in the experience card */
+    #experienceSection .card-text {
+        padding-left: 10px;  /* Adjust as needed */
+        padding-right: 10px; /* Adjust as needed */
+    }
+}
