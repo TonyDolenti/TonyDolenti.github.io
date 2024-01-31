@@ -1,0 +1,482 @@
+
+@font-face {
+    /*font-family: 'DM Serif Display';
+    src: url('/fonts/DM_Serif_Display/DMSerifDisplay-Regular.ttf') format('truetype');*/ /* Regular style */
+    /*font-weight: normal;
+    font-style: normal;*/
+
+    font-family: 'ArchivoBlack';
+    src: url('root/fonts/ArchivoBlack-Regular.ttf') format('opentype'); /* Regular style */
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Bonheur Royale';
+    src: url('root/fonts/Bonheur_Royale/BonheurRoyale-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Mr Dafoe';
+    src: url('root/fonts/Mr_Dafoe/MrDafoe-Regular.ttf') format('opentype');
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'RobotoSlab';
+    src: url('/fonts/RobotoSlab-VariableFont_wght.ttf') format('truetype');
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'DM Serif Display';
+    src: url('root/fonts/DM_Serif_Display/DMSerifDisplay-Regular.ttf') format('opentype');
+    font-style: normal;
+}
+
+html, body, h1, h2, h3, p, a {
+    font-family: 'DM Serif Display', regular;
+    letter-spacing: 1px;
+}
+
+html {
+  font-size: 14px;
+}
+
+@media (min-width: 768px) {
+  html {
+    font-size: 21px;
+  }
+}
+
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+body {
+    margin-bottom: 60px;
+    background: linear-gradient(#ff9c00, #00d0ff);
+/*    background-image: url('/imgs/background v5.jpg');*/
+    background-size: cover;
+    background-position: center;
+    padding-top: 0px;
+}
+
+.card {
+    user-select: none;
+    background-color: white;
+    border-radius: 15px !important;
+    margin: 20px;
+    text-align: center;
+    margin-bottom: 20px;
+    transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+}
+
+.card:hover {
+    transform: scale(1.02);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.card-title-name {
+    font-family: 'Mr Dafoe', cursive;
+    font-size: 90px;
+}
+
+main {
+    margin-top: 20px;
+}
+
+
+.footer {
+    background-color: #333;
+    color: white;
+    padding: 5px 0 !important;
+    text-align: center;
+}
+
+    footer a {
+        color: white;
+        margin: 0 10px;
+    }
+
+
+.scroll-container {
+    max-height: 920px;
+    overflow-y: auto;
+}
+
+.custom-card-body {
+    border-radius: 15px;
+    padding: 10px;
+    margin: 10px;
+}
+
+.name-card {
+    cursor: pointer;
+    user-select: none;
+    position: relative;
+    max-width: 700px;
+    margin:180px auto 60px;
+    padding:40px;
+    background: rgba(255, 255, 255, 0.4); /* Adjust the alpha value for transparency */
+    border-radius: 15px;
+    text-align: center;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.6); /* Optional: Add a subtle box shadow */
+    backdrop-filter: blur(5px); /* Adjust the blur amount as needed */
+    transition: transform 0.13s ease-in-out;
+}
+
+    .name-card:hover {
+        transform: translateY(-10px); /* Move the card up by 10 pixels when hovered */
+    }
+
+    .name-card h1,
+    .name-card p {
+        color: black;
+    }
+
+.resume-card {
+    position: relative;
+    max-width: 570px;
+    margin: 30px auto;
+    margin-bottom: 80px;
+    padding: 30px;
+    background: rgba(255, 255, 255, 0.4); /* Adjust the alpha value for transparency */
+    border-radius: 20.25rem;
+    text-align: center;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.6); /* Optional: Add a subtle box shadow */
+    backdrop-filter: blur(2px);
+    transition: transform 0.13s ease-in-out;
+}
+
+/*.resume-card:hover {
+    transform: translateY(-10px);
+}*/
+
+.resume-btn:not(:disabled):not(.disabled) {
+    cursor: pointer;
+}
+
+.resume-btn-outline-dark {
+    color: #343a40;
+    border-color: #343a40;
+}
+
+.resume-btn {
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.4);
+    font-weight: 500;
+    font-size: 60px !important;
+    display: inline-block;
+    font-weight: 400;
+    color: /*#212529*/ white;
+    text-align: center;
+    vertical-align: middle;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    background-color: transparent;
+    border: 2px solid white;
+    padding: 1.375rem 3.75rem;
+    font-size: 1rem;
+    line-height: 1.5;
+    border-radius: 20.25rem;
+    text-decoration: none;
+    transition: transform 0.13s ease-in-out, color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+}
+
+    .resume-btn:hover {
+        background-color: black;
+        color: white;
+        border-color: black;
+        transform: translateY(-8px);
+        text-decoration: none;
+    }
+
+.new-card {
+    position: relative;
+    max-width: 3000px;
+    margin: 30px auto;
+    margin-bottom: 80px;
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.4); /* Adjust the alpha value for transparency */
+    border-radius: 15px;
+    text-align: center;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.6); /* Optional: Add a subtle box shadow */
+    backdrop-filter: blur(7px); /* Adjust the blur amount as needed */
+}
+
+    .new-card h1,
+    .new-card p {
+        color: black;
+    }
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+        transform: translateY(20px); /* Optional: Add a vertical translation */
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeInSlow {
+    0% {
+        opacity: 0;
+        transform: translateY(20px); /* Optional: Add a vertical translation */
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Apply the animation to elements with the class "fade-in" */
+.fade-in {
+    animation: fadeIn 0.7s ease-in-out; /* Adjust the duration and easing as needed */
+}
+
+.fade-in-slow {
+    animation: fadeInSlow 1.2s ease-in-out; /* Adjust the duration and easing as needed */
+}
+
+.get-in-touch-card {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    background: rgba(255, 255, 255, 0.7);
+    border-radius: 15px;
+    padding: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    backdrop-filter: blur(5px);
+    text-align: center; /* Center align the content */
+    display: flex;
+    flex-direction: column; /* Stack items vertically */
+    align-items: center; /* Center items horizontally */
+}
+
+.header {
+    color: white;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 90px;
+    background: rgba(255, 255, 255, 0.0); /* Transparent background */
+    border-bottom: 0px solid rgba(255, 255, 255, 0.2); /* Optional: Add a subtle border */
+    padding: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.6);
+    backdrop-filter: blur(10px);
+    text-align: center; /* Center align the content */
+    display: flex;
+    justify-content: space-between; /* Align items horizontally with space between */
+    align-items: center; /* Center items vertically */
+    z-index: 1000;
+    transition: background-color 0.3s ease; /* Add a transition for smooth color change */
+}
+
+    .header .logo-link {
+        margin: 0 10px;
+        text-decoration: none;
+        color: dodgerblue;
+    }
+
+        .header .logo-link img {
+            max-width: 100%;
+            
+        }
+
+.header-text {
+    font-family: 'DM Serif Display';
+    flex-grow: 1; /* Allow the text to take up available space */
+    text-align: center;
+    color: white;
+    font-size: 48px;
+    font-weight: bold;
+    display: flex; /* Use flexbox for centering */
+    justify-content: center; /* Center horizontally */
+    align-items: center;
+    text-shadow: 2px 2px 10px rgba(0, 0, 0, 1);
+    margin-right: 120px;
+}
+
+    .header a {
+        text-decoration: none;
+        color: dodgerblue;
+        margin: 0 10px;
+        transition: margin 0.1s ease;
+    }
+
+        .header a:hover {
+            margin-top: 5px;
+        }
+
+    .header a.btn {
+        margin-left: auto;
+    }
+
+        .header a.btn.btn-outline-dark {
+            color: white;
+        }
+
+.send-message-link {
+    margin-left: auto; /* Move the "Send Message" link to the right */
+}
+
+    .get-in-touch-card a {
+        margin: 10px; /* Add some spacing between the images */
+    }
+
+.btn-custom {
+    border-radius: 7px;
+    background-color: dimgray;
+    color: white !important;
+}
+
+.video-container {
+    border-radius: 15px;
+    overflow: hidden;
+    position: relative;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.9);
+    width: 100%; /* Adjust as needed */
+    height: 100%; /* Adjust as needed */
+    display: flex; /* Add flex container */
+    justify-content: center; /* Center horizontally */
+    align-items: center;
+}
+
+    .video-container video {
+        width: 100%;
+        height: 100%;
+        object-fit: cover; /* This will make the video cover the entire container, cropping it if necessary */
+    }
+
+.btn:not(:disabled):not(.disabled) {
+    cursor: pointer;
+}
+
+.btn-outline-dark {
+    color: #343a40;
+    border-color: #343a40;
+}
+
+.btn {
+    box-shadow:  5px 5px 5px rgba(0, 0, 0, 0.4);
+    font-weight: 500;
+    font-size: 30px !important;
+    display: inline-block;
+    font-weight: 400;
+    color: /*#212529*/ white;
+    text-align: center;
+    vertical-align: middle;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    background-color: transparent;
+    border: 2px solid white;
+    padding: 0.375rem 0.75rem;
+    font-size: 1rem;
+    line-height: 1.5;
+    border-radius: 10.25rem;
+    transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+}
+
+    .btn:hover {
+        background-color: black;
+        color: white;
+        border-color: black;
+    }
+
+.card-text {
+    padding: 50px;
+    color: white !important;
+    text-shadow: 0px 0px 20px rgba(0, 0, 0, 1);
+}
+
+.card-title {
+    font-size: 70px;
+    color: white;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+}
+
+.card-sub-title {
+    font-size: 40px;
+    color: white;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+}
+
+.arr {
+    background: white;
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    margin: 15px auto;
+    transition: 0.4s ease;
+}
+
+.arr:hover {
+    box-shadow: 0px 0px 20px 20px rgba(0, 0, 0, 0.103);
+}
+
+    .arr div {
+        position: absolute;
+        height: 40px;
+        width: 40px;
+        border-top: 8px solid #202020;
+        border-left: 8px solid #202020;
+        transform: rotate(45deg);
+        left: 27.5px;
+        top: 35px;
+    }
+
+    .down {
+        transform: rotate(180deg);
+    }
+
+.card-group .card {
+    position: relative;
+    z-index: 1;
+    background-size: cover;
+    overflow: hidden;
+}
+
+    .card-group .card::before {
+        content: "";
+        position: absolute;
+        z-index: -1;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-image: inherit;
+        filter: blur(5px); /* Adjust the blur value as needed */
+    }
+
+.card-group .card-body {
+    position: relative;
+    z-index: 1;
+}
+
+.project-card {
+    user-select: none;
+    background-color: white;
+    border: 2px solid white;
+    border-radius: 15px !important;
+    margin: 20px;
+    text-align: center;
+    margin-bottom: 20px;
+    transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+    background: transparent;
+/*    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.2),
+        -5px -5px 5px rgba(0, 0, 0, 0.2),
+        5px -5px 5px rgba(0, 0, 0, 0.2),
+        -5px 5px 5px rgba(0, 0, 0, 0.2)*/;
+}
