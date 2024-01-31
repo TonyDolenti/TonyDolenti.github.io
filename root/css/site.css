@@ -501,7 +501,7 @@ main {
     }
 
     .logo-link img {
-        width: 40px; /* Adjust the size of your logos for smaller screens */
+        width: 55px; /* Adjust the size of your logos for smaller screens */
         height: auto;
     }
 
@@ -515,15 +515,17 @@ main {
     }
 
     .header-text.contact-me {
-        font-size: 16px !important; /* Adjust the font size for better readability on smaller screens */
-    }
-
-    .btn.btn-outline-dark {
         font-size: 14px !important; /* Adjust the font size for better readability on smaller screens */
     }
 
+    .btn.btn-outline-dark {
+        font-size: 13px !important; /* Adjust the font size for better readability on smaller screens */
+    }
+
     .name-card {
-        margin-top: 100px !important; /* Adjust the value as needed for smaller screens */
+        margin-top: 120px !important; /* Adjust the value as needed for smaller screens */
+        margin: 10px;
+        padding: 10px;
     }
 
     .scroll-container {
@@ -531,14 +533,14 @@ main {
     }
 
     .name-card {
-        margin: 20px;
+        margin: 10px;
     }
 
     .resume-card,
     .new-card,
     .project-card {
-        margin: 20px;
-        padding: 20px;
+        margin: 10px;
+        padding: 10px;
     }
 
     .resume-card,
@@ -549,39 +551,64 @@ main {
     }
 
     .video-container {
-        border-radius: 0;
+        border-radius: 15px;
     }
 
     .card-title-name {
-        font-size: 40px;
+        font-size: 30px;
     }
 
     .resume-btn {
-        font-size: 30px !important;
+        font-size: 20px !important;
         padding: 0.375rem 0.75rem;
     }
 
     .card-title {
-        font-size: 40px;
+        font-size: 30px;
     }
 
     .card-sub-title {
-        font-size: 24px;
+        font-size: 18px;
     }
 
     #skills img {
-        width: 100px !important;
+        width: 80px !important;
         height: auto !important;
     }
 
-    #aboutMeSection p {
-        padding-left: 10px;  /* Adjust as needed */
-        padding-right: 10px; /* Adjust as needed */
+    #skills .card-text {
+        padding: 5px; /* Adjust the padding as needed */
     }
-    
+
+    #aboutMeSection p {
+        padding-left: 5px;  /* Adjust as needed */
+        padding-right: 5px; /* Adjust as needed */
+    }
+
     /* Adjust padding for text in the experience card */
     #experienceSection .card-text {
-        padding-left: 10px;  /* Adjust as needed */
-        padding-right: 10px; /* Adjust as needed */
+        padding-left: 5px;  /* Adjust as needed */
+        padding-right: 5px; /* Adjust as needed */
+    }
+
+    .new-card {
+        padding: 5px; /* Adjust the padding as needed */
+    }
+
+    #skills .asp-net-img {
+        width: 130px !important;
+        height: auto !important;
+    }
+
+    #skills .sql-img {
+        width: 180px !important;
+        height: auto !important;
+        max-height: 220px;
+    }
+
+    #skills .css-img {
+        width: 60px !important; /* Adjust the width as needed for smaller screens */
+        height: auto !important;
+        max-height: 200px;
     }
 }
