@@ -611,4 +611,9 @@ main {
         height: auto !important;
         max-height: 200px;
     }
+
+    .project-card .buttons a.btn {
+        font-size: 20px !important; /* Adjust the font size as needed */
+        padding: 0.5rem 1rem !important; /* Adjust the padding as needed */
+    }
 }
